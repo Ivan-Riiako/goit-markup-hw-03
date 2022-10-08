@@ -1,0 +1,565 @@
+body{
+font-family: 'Roboto', sans-serif;
+margin: auto;
+padding: auto;
+background: var(--bg-body-color)
+}
+
+/* =----------------------OTHER----------------- */
+
+.list {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-studio:hover,
+.nav-studio:hover,
+ .nav-portfolio:hover, 
+.nav-contacts:hover,
+ .contact-maill:hover, 
+.contact-tell:hover,
+.adress-place:hover,
+.adress:hover,
+.footer-logo-studio:hover { 
+    color: var(--link-active);
+} 
+
+.nav-contacts :visited {
+    color: var(--link-active);
+}
+
+
+.logo-studio:focus,
+.nav-studio:focus,
+.nav-portfolio:focus,
+.nav-contacts:focus,
+.contact-maill:focus,
+.contact-tell:focus,
+.adress-place:focus,
+.adress:focus,
+.footer-logo-studio:focus {
+color: var(--link-active);
+}
+
+:root{
+    --logo-web-color:#2196F3;
+    --logo-studio-up:#000000;
+    --logo-studio-lower: #FFFFFF;
+    --nav-color:#212121;
+    --contacts-color:#757575;
+    --button-text-color:#FFFFFF;
+    --button-active-color:#188CE8;
+    --button-color:#2196F3;
+    --link-active:#2196F3;
+    --adress-contact-color:rgba(255, 255, 255, 0.6);
+    --adress-place-color:#FFFFFF;
+    --bg-footer-color:#2F303A;
+    --bg-body-color:#FFFFFF;
+    --bg-hero-color:#2F303A;
+    --bg-team-color:#F5F4FA;
+    --bg-taam-card-color:#fff;
+    --h-hero-color:#FFFFFF;
+    --h-what-color:#212121;
+    --h-team-color:#212121;
+    --team-name-color:#212121;
+    --team-dsk-color:#757575;
+    --feature-list-h:#212121;
+    --feature-dsk:#757575;
+    --nav-line:#ECECEC;
+/* colors of portfolio */
+    --project-bg-btn:#F5F4FA;
+    --project-border-btn:#F5F4FA;
+    --project-btn-text:#212121;
+    --project-btn-active-text:#FFFFFF;
+    --project-card-border:#EEEEEE;
+    --project-card-h:#212121;
+    --project-card-dsk:#757575;
+
+}
+/* --------------Header --------------*/
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid var(--nav-line);
+
+}
+
+
+
+
+
+/* --------------LOGO --------------*/
+
+.logo-web{
+font-family: 'Raleway';
+    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-web-color);
+    width: 145px;
+        height: 31px;
+    
+}
+.logo-studio {
+font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-studio-up);
+}
+
+
+
+/* --------------NAVIGATION  --------------*/
+.navigation{
+display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 519px;
+
+}
+.nav-list-other {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    width: 281px;
+    height: 16px;
+}
+
+
+.nav-studio{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--nav-color);
+}
+
+.nav-portfolio{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--nav-color);
+}
+
+.nav-contacts{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--nav-color);
+}
+
+/* --------------CONTACTS --------------*/
+.contacts {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 307px;
+            height: 16px;
+
+}
+
+.contact-maill{
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--contacts-color);
+}
+
+.contact-tell{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contacts-color);
+}
+
+/*---------- MAIN-----------*/
+
+/* Section PORTFOLIO */
+.portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-projects{
+    width: 1170px;
+    height: 1360px;
+    margin: 94px auto;
+    padding: 0;
+}
+
+/* BUTTONS PORTFOLIO */
+.all-btn{
+    display: flex;
+justify-content: center;
+}
+.list-btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    grid-gap: 8px;
+    width: 575px;
+    height: 54px;
+    margin: 0;
+}
+.button-portfolio{
+    width: auto;
+    height: 38px;
+    background: var(--project-bg-btn);
+    border-radius: 4px;
+    border: var(--project-border-btn);
+    padding: 6px 22px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--project-btn-text);
+cursor: pointer;
+}
+
+.button-portfolio:hover{
+    background-color: var(--button-color);
+    color: var(--project-btn-active-text);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+/* LIST OUR PROJECTS*/
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+    padding: 0;
+}
+.img-project{
+width: 370px;
+height: 294px;
+}
+
+.project-card{
+width: 368px;
+height: 404px;
+border-style: solid ;
+border-width: 1px;
+border-color: var(--project-card-border) ;
+}
+.project-heading{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--project-card-h);
+padding-left: 24px;
+margin: 20px 0 4px 0;
+}
+.project-descriotion{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--project-card-dsk);
+padding-left: 24px;
+margin: 4px 0 20px 0;
+}
+
+
+/*--------Section HERO --------*/
+
+.hero-section {
+background-color:  var(--bg-hero-color);
+height: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+
+.hero-heading{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--h-hero-color);
+}
+
+
+/* -------BUTTON-------- */
+
+.button {
+background: var(--button-color);
+border-radius: 4px;
+width: 240.3px;
+height: 50px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.8;
+letter-spacing: 0.06em;
+color: var(--button-text-color);
+cursor: pointer;
+}
+
+.button:active{
+    background: var(--button-active-color)
+}
+
+/* div ??, НЕТ НЕ СЛЫШАЛ! */
+/* Общая секция для "Our feature" и "What do we do? "*/
+.about-our-work{
+    height: 766px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing:content-box;
+}
+
+/*   ------------Our feature ------------- */
+
+
+
+
+
+
+/*  feature heading */
+.hidden {
+color: rgba(0, 0, 0, 0);
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+/* feature  list OTHER*/
+/* Контейнер с прймуществами */
+
+.features{
+display: flex;
+grid-gap: 30px;
+padding: 0;
+margin: 0;
+width: 1170px;
+height: 98px;
+}
+
+/* feature  card*/
+.feature-list-style {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 74px;
+    margin:   0;
+     padding: 0;
+}
+
+.feature-list-heading{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin: 0 0 10px 0;
+color: var(--feature-list-h);
+}
+
+.feature-list-description{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--feature-dsk);
+margin:  0px;
+}
+
+    /* --------What do we do? ---------*/
+.what-do-we-do{
+    margin-top: 95px;
+    width: 1170px;
+    height: 386px;
+
+}
+.what-heading{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--h-what-color);
+}
+
+
+.what-list-other {
+display: flex;
+justify-content:space-between;
+padding: 0;
+}
+
+.img-what {
+width: 370px;
+height: 294px;
+}
+
+/*-------------- OUR TEAM---------------*/
+
+.our-team{
+ background-color: var(--bg-team-color);
+width: auto;
+height: 648px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.our-team-heading{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--h-team-color) ;
+}
+
+
+.our-team-list{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 1170px;
+height: 368px;
+}
+
+
+ .team-card{
+flex-direction: column ;
+background-color: var(--bg-taam-card-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+ }
+
+
+.team-list{
+display: flex;
+justify-content: space-around;
+}
+
+
+ /*-------- Images--------*/
+.imag-team{
+  width: 270px;
+  height: 260px;
+}
+
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--team-name-color);
+}
+
+.our-team-profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--team-dsk-color);
+}
+
+
+
+/* -------------FOOTER-------------- */
+
+.footer{
+background-color:var(--bg-footer-color);
+display: flex;
+flex-direction: column ;
+justify-content:center ;
+align-items: center;
+height: 250px;
+}
+
+.footer-logo-web{
+font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-web-color);
+    width: 1170px;
+}
+
+.footer-logo-studio{
+font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height:1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-studio-lower);
+}
+
+.footer-addres{
+width: 1170px;
+}
+
+.adress-place{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--adress-place-color)
+}
+
+.adress{
+font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--adress-contact-color);
+}

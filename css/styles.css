@@ -1,6 +1,20 @@
+
+/* Обнуление отступов */
+html{
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
 body{
+    /* height: 100%; */
 font-family: 'Roboto', sans-serif;
-margin: auto;
+margin: 0;
 padding: auto;
 background: var(--bg-body-color)
 }
@@ -8,6 +22,7 @@ background: var(--bg-body-color)
 /* =----------------------OTHER----------------- */
 
 .list {
+    margin: 0;
     padding: 0;
     list-style-type: none;
 }
@@ -196,11 +211,15 @@ display: flex;
 
 /*---------- MAIN-----------*/
 
-/* Section PORTFOLIO */
+/* Section PORTFOLIO --*/
+
 .portfolio{
+  
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    
+    
 }
 
 .our-projects{
@@ -250,7 +269,7 @@ cursor: pointer;
 }
 
 
-/* LIST OUR PROJECTS*/
+/* LIST OUR PROJECTS PORTFOLIO*/
 
 .project-list{
     display: flex;
@@ -259,16 +278,16 @@ cursor: pointer;
     padding: 0;
 }
 .img-project{
-width: 370px;
-height: 294px;
+    display: inline-block;
+width: 100%;
+
 }
 
 .project-card{
-width: 368px;
+width: 370px;
 height: 404px;
-border-style: solid ;
-border-width: 1px;
-border-color: var(--project-card-border) ;
+
+outline:1px solid var(--project-card-border);
 }
 .project-heading{
 font-weight: 700;
@@ -290,16 +309,13 @@ margin: 4px 0 20px 0;
 }
 
 
-/*--------Section HERO --------*/
+/*--------Section STUDIO HERO --------*/
 
 .hero-section {
 background-color:  var(--bg-hero-color);
-height: 600px;
-display: flex;
-flex-direction: column;
-align-items: center;
+padding: 200px 0;
 text-align: center;
-justify-content: center;
+
 }
 
 .hero-heading{
@@ -310,6 +326,8 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--h-hero-color);
+margin: 0;
+margin-bottom: 30px;
 }
 
 
@@ -334,25 +352,25 @@ cursor: pointer;
     background: var(--button-active-color)
 }
 
-/* div ??, НЕТ НЕ СЛЫШАЛ! */
 /* Общая секция для "Our feature" и "What do we do? "*/
 .about-our-work{
-    height: 766px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-sizing:content-box;
-}
+    margin-bottom: 4px;
+    }
 
 /*   ------------Our feature ------------- */
 
 
 
+.our-feature{
+    padding: 95px 0;
+}
 
 
-
-/*  feature heading */
+/*  feature heading hidden*/
 .hidden {
 color: rgba(0, 0, 0, 0);
 position: absolute;
@@ -372,21 +390,17 @@ overflow: hidden;
 
 .features{
 display: flex;
+flex-wrap: wrap;
 grid-gap: 30px;
-padding: 0;
-margin: 0;
-width: 1170px;
-height: 98px;
 }
 
 /* feature  card*/
 .feature-list-style {
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 74px;
-    margin:   0;
-     padding: 0;
+    width: 270px;
+    align-items: flex-start;
+
 }
 
 .feature-list-heading{
@@ -394,8 +408,9 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
+margin: 0;
+margin-bottom: 10px;
 text-transform: uppercase;
-margin: 0 0 10px 0;
 color: var(--feature-list-h);
 }
 
@@ -410,9 +425,7 @@ margin:  0px;
 
     /* --------What do we do? ---------*/
 .what-do-we-do{
-    margin-top: 95px;
-    width: 1170px;
-    height: 386px;
+   margin: 0 auto;
 
 }
 .what-heading{
@@ -427,25 +440,24 @@ color: var(--h-what-color);
 
 .what-list-other {
 display: flex;
-justify-content:space-between;
-padding: 0;
+flex-wrap: wrap;
+grid-gap: 30px;
 }
 
 .img-what {
 width: 370px;
-height: 294px;
+display: block;
 }
 
 /*-------------- OUR TEAM---------------*/
 
 .our-team{
  background-color: var(--bg-team-color);
-width: auto;
-height: 648px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content:center ;
+ padding: 95px 0;
 }
 
 .our-team-heading{
@@ -455,15 +467,17 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color:var(--h-team-color) ;
+
+margin-top: 0;
+margin-bottom: 50px;
 }
 
 
 .our-team-list{
 display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 1170px;
-height: 368px;
+flex-wrap: wrap;
+grid-gap: 30px;
+
 }
 
 
@@ -472,22 +486,25 @@ flex-direction: column ;
 background-color: var(--bg-taam-card-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    justify-content: center;
-    align-items: flex-end;
-    list-style-type: none;
+
+    align-self: flex-start;
+    
  }
-
-
-.team-list{
-display: flex;
-justify-content: space-around;
-}
 
 
  /*-------- Images--------*/
 .imag-team{
   width: 270px;
-  height: 260px;
+ display: block;
+ 
+}
+
+.container-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
 }
 
 .team-name{
@@ -497,6 +514,7 @@ justify-content: space-around;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--team-name-color);
+    margin: 0 0 10px;
 }
 
 .our-team-profession {
@@ -506,20 +524,30 @@ justify-content: space-around;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--team-dsk-color);
+    margin: 0;
 }
 
 
 
 /* -------------FOOTER-------------- */
 
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-footer-color);
+    padding: 60px 0px;
+}
+
+
 .footer{
-background-color:var(--bg-footer-color);
+
 display: flex;
 flex-direction: column ;
-justify-content:center ;
-align-items: center;
-height: 250px;
+align-items: flex-start;
+width: 1170px;
 }
+
 
 .footer-logo-web{
 font-family: 'Raleway';
@@ -529,7 +557,8 @@ font-family: 'Raleway';
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--logo-web-color);
-    width: 1170px;
+
+    margin-bottom: 20px;
 }
 
 .footer-logo-studio{
@@ -542,9 +571,6 @@ font-family: 'Raleway';
     color: var(--logo-studio-lower);
 }
 
-.footer-addres{
-width: 1170px;
-}
 
 .adress-place{
 font-style: normal;

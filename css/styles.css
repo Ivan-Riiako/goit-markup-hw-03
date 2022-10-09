@@ -99,34 +99,38 @@ color: var(--link-active);
 
 .head {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around ;
+    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
     border-bottom: 1px solid var(--nav-line);
-
+   width: 1200px;
+   padding: 32px 15px;
 }
 
 
 
+/* --------------NAVIGATION  --------------*/
+.navigation{
+display: flex;
+align-items:center;
 
+
+}
 
 /* --------------LOGO --------------*/
 
-.logo-web{
-font-family: 'Raleway';
-    
+.logo-web {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--logo-web-color);
-    width: 145px;
-        height: 31px;
-    
+    margin-right: 93px;
 }
+
 .logo-studio {
-font-family: 'Raleway';
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -135,23 +139,10 @@ font-family: 'Raleway';
     color: var(--logo-studio-up);
 }
 
-
-
-/* --------------NAVIGATION  --------------*/
-.navigation{
-display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 519px;
-
-}
 .nav-list-other {
     display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    width: 281px;
-    height: 16px;
+    gap: 50px;
+    justify-content: space-between;
 }
 
 
@@ -168,7 +159,6 @@ display: flex;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     color: var(--nav-color);
 }
 
@@ -177,18 +167,15 @@ display: flex;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     color: var(--nav-color);
 }
 
 /* --------------CONTACTS --------------*/
 .contacts {
     display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 307px;
-            height: 16px;
-
+    justify-content: space-around;
+    padding: 0;
+gap: 50px;
 }
 
 .contact-maill{
@@ -438,6 +425,8 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--h-what-color);
+margin: 0;
+margin-bottom: 50px;
 }
 
 

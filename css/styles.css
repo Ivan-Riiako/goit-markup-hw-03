@@ -96,16 +96,28 @@ color: var(--link-active);
 
 }
 /* --------------Header --------------*/
+.container-head {
+border-bottom: 1px solid var(--nav-line);
+
+}
 
 .head {
+    
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--nav-line);
-   width: 1200px;
-   padding: 32px 15px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 15px;
+        width: 1200px;
 }
+
+
+
+
+
+
+
+
 
 
 

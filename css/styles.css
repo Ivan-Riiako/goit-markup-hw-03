@@ -1,21 +1,28 @@
 
 /* Обнуление отступов */
-html{
-    box-sizing: border-box;
+/* html{ */
+    /* box-sizing: border-box; */
+/* } */
+/*  */
+/* *,  */
+/* *::before, */
+/* *::after{ */
+    /* box-sizing: inherit; */
+/* } */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    margin: 0;
+    padding: 0;
 }
-
-*, 
-*::before,
-*::after{
-    box-sizing: inherit;
-}
-
-
 body{
-    /* height: 100%; */
 font-family: 'Roboto', sans-serif;
-margin: 0;
-padding: auto;
 background: var(--bg-body-color)
 }
 
@@ -94,28 +101,38 @@ color: var(--link-active);
     --project-card-h:#212121;
     --project-card-dsk:#757575;
 
+
+
+    --space-card:30px;
 }
 /* --------------Header --------------*/
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
 .head {
 border-bottom: 1px solid var(--nav-line);
+padding: 32px 15px;
+
 }
 
 .container-head {
     display: flex;
-    margin: 0 auto;
     align-items: center;
-    justify-content: space-between;
-    padding: 32px 15px;
-    width: 1200px;
-
 }
 
 /* --------------NAVIGATION  --------------*/
 .navigation{
 display: flex;
+justify-content: flex-start;
 align-items:center;
-
-
 }
 
 /* --------------LOGO --------------*/
@@ -177,6 +194,7 @@ align-items:center;
     justify-content: space-around;
     padding: 0;
 gap: 50px;
+margin-left: auto;
 }
 
 .contact-maill{
@@ -201,39 +219,20 @@ gap: 50px;
 
 /* Section PORTFOLIO --*/
 
-.portfolio{
-  
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    
-    
-}
-
-.our-projects{
-    width: 1170px;
-    height: 1360px;
-    margin: 94px auto;
-    padding: 0;
-}
 
 /* BUTTONS PORTFOLIO */
-.all-btn{
+.nav-projects{
     display: flex;
-justify-content: center;
-}
-.list-btn{
-    display: flex;
-    align-items: flex-start;
     justify-content: center;
     grid-gap: 8px;
-    width: 575px;
-    height: 54px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 34px;
 }
 .button-portfolio{
     width: auto;
-    height: 38px;
+    min-height: 38px;
+    min-width: 73px;
     background: var(--project-bg-btn);
     border-radius: 4px;
     border: var(--project-border-btn);
@@ -262,21 +261,27 @@ cursor: pointer;
 .project-list{
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 30px;
-    padding: 0;
 }
 .img-project{
-    display: inline-block;
+    display: block;
 width: 100%;
 
 }
 
 .project-card{
-width: 370px;
-height: 404px;
-
-outline:1px solid var(--project-card-border);
+width: calc((100%/3)-(2*var(--space-card)));
+border-bottom: 1px solid var(--project-card-border) ;
+/* outline:1px solid var(--project-card-border); */
+margin-left: var(--space-card);
+margin-bottom: var(--space-card);
 }
+.project-card:nth-child(3n+1){
+    margin-left: 0;
+}
+.project-card:nth-last-of-type(-n+3){
+    margin-bottom: 0;
+}
+
 .project-heading{
 font-weight: 700;
 font-size: 18px;
@@ -342,23 +347,8 @@ cursor: pointer;
     background: var(--button-active-color)
 }
 
-/* Общая секция для "Our feature" и "What do we do? "*/
-.about-our-work{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4px;
-    
-    }
 
 /*   ------------Our feature ------------- */
-
-
-
-.our-feature{
-    padding: 95px 0;
-}
 
 
 /*  feature heading hidden*/
@@ -381,17 +371,16 @@ overflow: hidden;
 
 .features{
 display: flex;
-flex-wrap: wrap;
-grid-gap: 30px;
 }
 
 /* feature  card*/
-.feature-list-style {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
+.feature-card {
+    width:calc((100%/4)-(3*var(--space-card))) ;
     align-items: flex-start;
-
+    margin-left: var(--space-card);
+}
+.feature-card:first-child{
+    margin-left: 0;
 }
 
 .feature-list-heading{
@@ -415,10 +404,9 @@ margin:  0px;
 }
 
     /* --------What do we do? ---------*/
-.what-do-we-do{
-   margin: 0 auto;
 
-}
+
+
 .what-heading{
 font-weight: 700;
 font-size: 36px;
@@ -433,24 +421,25 @@ margin-bottom: 50px;
 
 .what-list-other {
 display: flex;
-flex-wrap: wrap;
-grid-gap: 30px;
+}
+.what-card{
+    margin-left: var(--space-card);
+    width: calc((100%/3)-(2*var(--space-card)));
 }
 
+.what-card:first-child{
+    margin-left: 0;
+}
 .img-what {
-width: 370px;
+width: 100%;
 display: block;
+
 }
 
 /*-------------- OUR TEAM---------------*/
 
 .our-team{
  background-color: var(--bg-team-color);
- display: flex;
- flex-direction: column;
- align-items:center;
- justify-content:center ;
- padding: 95px 0;
 }
 
 .our-team-heading{
@@ -461,16 +450,12 @@ text-align: center;
 letter-spacing: 0.03em;
 color:var(--h-team-color) ;
 
-margin-top: 0;
 margin-bottom: 50px;
 }
 
 
 .our-team-list{
 display: flex;
-flex-wrap: wrap;
-grid-gap: 30px;
-
 }
 
 
@@ -478,16 +463,18 @@ grid-gap: 30px;
 flex-direction: column ;
 background-color: var(--bg-taam-card-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
-    align-self: flex-start;
-    
+border-radius: 0px 0px 4px 4px;
+width: calc((100%/4)-(3*var(--space-card)));
+margin-left: var(--space-card);
  }
 
+.team-card:first-child {
+    margin-left: 0;
 
+}
  /*-------- Images--------*/
 .imag-team{
-  width: 270px;
+  width: 100%;
  display: block;
  
 }
@@ -525,18 +512,13 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 /* -------------FOOTER-------------- */
 
 .footer {
-    display: flex;
-    justify-content: center;
     background-color: var(--bg-footer-color);
     padding: 60px 0px;
 }
 
-.footer-container {
+.footer-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 1200px;
-    padding: 0 15px;
 }
 
 

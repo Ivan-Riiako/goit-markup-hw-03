@@ -201,7 +201,7 @@ margin-left: auto;
 
     text-decoration: none;
     color: var(--contacts-color);
-
+display: block;
     margin-left: 30px;
 }
 

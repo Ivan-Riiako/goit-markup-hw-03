@@ -334,7 +334,9 @@ cursor: pointer;
 
 /*   ------------Our feature ------------- */
 
-
+.features-section {
+    padding-bottom: 0;
+}
 /*  feature heading hidden*/
 .hidden {
 color: rgba(0, 0, 0, 0);

@@ -37,36 +37,30 @@ background: var(--bg-body-color)
 a {
     text-decoration: none;
 }
-
+/* Head */
 .logo-studio:hover,
-
 .nav-element:hover,
+.contacts .contact:hover, 
 
-.contact:hover, 
-
-
+/* FooTer */
 .adress-place:hover,
 .adress:hover,
 .footer-logo-studio:hover { 
     color: var(--link-active);
 } 
 
-.nav-contacts :visited {
-    color: var(--link-active);
-}
 
-
+/* Head */
 .logo-studio:focus,
-.nav-studio:focus,
-.nav-portfolio:focus,
-.nav-contacts:focus,
-.contact-maill:focus,
-.contact-tell:focus,
+.nav-element:focus,
+.contacts .contact:focus,
+/* FooTer */
 .adress-place:focus,
 .adress:focus,
 .footer-logo-studio:focus {
 color: var(--link-active);
 }
+
 
 :root{
     --logo-web-color:#2196F3;
@@ -120,7 +114,7 @@ padding-bottom: 94px;
 }
 .head {
 border-bottom: 1px solid var(--nav-line);
-padding: 32px 15px;
+padding: 24px 15px;
 
 }
 
@@ -181,7 +175,7 @@ margin-left: auto;
 /* grid-gap: 30px; */
 }
 
-.contacts  .contact{
+.contacts .contact{
     
     font-weight: 500;
     font-size: 14px;

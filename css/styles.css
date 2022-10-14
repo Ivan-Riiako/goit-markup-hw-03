@@ -39,11 +39,12 @@ a {
 }
 
 .logo-studio:hover,
-.nav-studio:hover,
- .nav-portfolio:hover, 
-.nav-contacts:hover,
- .contact-maill:hover, 
-.contact-tell:hover,
+
+.nav-element:hover,
+
+.contact:hover, 
+
+
 .adress-place:hover,
 .adress:hover,
 .footer-logo-studio:hover { 

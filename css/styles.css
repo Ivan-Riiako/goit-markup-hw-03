@@ -266,14 +266,18 @@ margin-bottom: var(--space-card);
     margin-bottom: 0;
 }
 
+.card-text{
+padding-top: 20px;
+padding-bottom:20px ;
+padding-left: 24px;
+padding-right:24px ;
+}
 .project-heading{
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--project-card-h);
-padding-left: 24px;
-margin: 20px 0 4px 0;
 }
 .project-descriotion{
 font-weight: 400;
@@ -281,8 +285,6 @@ font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--project-card-dsk);
-padding-left: 24px;
-margin: 4px 0 20px 0;
 }
 
 

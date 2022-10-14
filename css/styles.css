@@ -254,7 +254,7 @@ width: 100%;
 
 .project-card{
 width: calc((100%/3)-(2*var(--space-card)));
-border-bottom: 1px solid var(--project-card-border) ;
+/* border: 1px solid var(--project-card-border) ; */
 /* outline:1px solid var(--project-card-border); */
 margin-left: var(--space-card);
 margin-bottom: var(--space-card);

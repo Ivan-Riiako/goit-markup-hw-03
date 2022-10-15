@@ -193,7 +193,7 @@ margin-left: auto;
 
 }
 .li-contact{
-margin-left: 30px;
+margin-left: 50px;
 }
 .li-contact:first-child {
     margin-left: 0;
@@ -284,6 +284,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--project-card-h);
+margin-bottom: 4px;
 }
 .project-descriotion{
 font-weight: 400;
